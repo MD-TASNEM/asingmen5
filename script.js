@@ -1,3 +1,27 @@
+const categoryContainer = document.getElementById("categoryContainer");
+
+const loadcategory = () => {
+  fetch(`https://openapi.programming-hero.com/api/categories`)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data.categories);
+      const categories = data.categories;
+      categories.forEach(category => {
+        categoryContainer.innerHTML += `
+            <li class="p-1 hover:bg-green-700 rounded-sm">${category.category_name}</li>
+            `;
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
+
+loadcategory();
+
+
+
+
 const cardsContainer = document.getElementById("cards");
 
 const loadcards = () => {
@@ -39,26 +63,3 @@ const loadcards = () => {
 };
 
 loadcards();
-
-
-
-const categoryContainer = document.getElementById("categoryContainer");
-
-const loadcategory = () => {
-  fetch(`https://openapi.programming-hero.com/api/categories`)
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data.categories);
-      const categories = data.categories;
-      categories.forEach(category => {
-        categoryContainer.innerHTML += `
-            <li class="p-1 hover:bg-green-700 rounded-sm">${category.category_name}</li>
-            `;
-      });
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-};
-
-loadcategory();
