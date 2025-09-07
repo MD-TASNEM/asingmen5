@@ -22,7 +22,7 @@
   <body>
     <header>
       <nav
-        class="max-md:flex-col gap-2 bg-green-700 p-4 text-white flex flex-row justify-between items-center"
+        class="gap-2 bg-green-700 p-4 text-white flex flex-row justify-between items-center"
       >
         <a href="#" class="font-bold mr-4 hover:bg-yellow-400 rounded-full p-2"
           ><img
@@ -88,217 +88,65 @@
         <p class="text-center text-2xl p-5 font-bold">Choose Your Trees</p>
 
         <div class="flex flex-row">
-          <!-- Categorie section -->
-          <section class="text-start w-2/12">
-            <p class="font-bold text-xl py-2">Categories</p>
-            <p class="text-xl py-1">All Trees</p>
-            <div>
-              <p class="py-1">Fruit Trees</p>
-              <p class="py-1">Flowering Trees</p>
-              <p class="py-1">Shade Trees</p>
-              <p class="py-1">Medicinal Trees</p>
-              <p class="py-1">Timber Trees</p>
-              <p class="py-1">Evergreen Trees</p>
-              <p class="py-1">Ornamental Plants</p>
-              <p class="py-1">Bamboo</p>
-              <p class="py-1">Climbers</p>
-              <p class="py-1">Aquatic Plants</p>
-            </div>
-          </section>
+          <div class="flex flex-row gap-4 w-full mx-auto p-5 max-lg:flex-col">
+            <!-- Categorie section -->
+            <section
+              class="text-start w-2/12 max-lg:w-full bg-slate-50 rounded-lg p-2"
+            >
+              <p class="font-bold text-xl py-2">Categories</p>
+              <p class="text-xl py-1">All Trees</p>
+              <div class="max-lg:flex flex-col">
+                <p class="py-1">Fruit Trees</p>
+                <p class="py-1">Flowering Trees</p>
+                <p class="py-1">Shade Trees</p>
+                <p class="py-1">Medicinal Trees</p>
+                <p class="py-1">Timber Trees</p>
+                <p class="py-1">Evergreen Trees</p>
+                <p class="py-1">Ornamental Plants</p>
+                <p class="py-1">Bamboo</p>
+                <p class="py-1">Climbers</p>
+                <p class="py-1">Aquatic Plants</p>
+              </div>
+            </section>
 
-          <!-- caerd section -->
-          <section
-            class="grid grid-cols-3 gap-4 px-2 w-8/12 max-md:grid-cols-1 max-md:w-full"
-          >
-            <div
-              class="bg-stone-50 shadow-lg rounded-lg flex flex-col justify-between items-center"
+            <!-- caerd section -->
+            <section
+              class="grid grid-cols-3 gap-4 px-2 w-8/12 max-md:grid-cols-1 max-md:w-full"
             >
-              <img
-                class="w-60 h-30"
-                src="./assets/about.png"
-                alt="Hero Image"
-                class="w-full h-96 object-cover"
-              />
-              <div class="py-4 px-2">
-                <p class="font-bold py-2">Mango Tree</p>
-                <p class="text-sm text-justify">
-                  A fast-growing tropical tree that produces delicious, juicy
-                  mangoes during summer. Its dense green
-                </p>
-                <div class="flex flex-row justify-between items-center">
-                  <p
-                    class="font-bold text-sm py-1 px-3 bg-green-200 rounded-full"
-                  >
-                    Mango Tree
+              <div
+                class="bg-stone-50 shadow-lg rounded-lg flex flex-col justify-between items-center"
+              >
+                <img
+                  class="w-60 h-30 max-lg:w-auto h-auto"
+                  src="./assets/about.png"
+                  alt="Hero Image"
+                  class="w-full h-96 object-cover"
+                />
+                <div class="py-4 px-2">
+                  <p class="font-bold py-2">Mango Tree</p>
+                  <p class="text-sm text-justify">
+                    A fast-growing tropical tree that produces delicious, juicy
+                    mangoes during summer. Its dense green
                   </p>
-                  <p class="font-bold text-xl p-2">৳500</p>
-                </div>
-                <button
-                  class="text-sm bg-green-700 px-4 py-2 rounded-full text-green-50 font-bold hover:bg-yeo-700 rounded-full p-2 w-full"
-                  href="#"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-            <div
-              class="bg-stone-50 shadow-lg rounded-lg flex flex-col justify-between items-center"
-            >
-              <img
-                class="w-60 h-30"
-                src="./assets/about.png"
-                alt="Hero Image"
-                class="w-full h-96 object-cover"
-              />
-              <div class="py-4 px-2">
-                <p class="font-bold py-2">Mango Tree</p>
-                <p class="text-sm text-justify">
-                  A fast-growing tropical tree that produces delicious, juicy
-                  mangoes during summer. Its dense green
-                </p>
-                <div class="flex flex-row justify-between items-center">
-                  <p
-                    class="font-bold text-sm py-1 px-3 bg-green-200 rounded-full"
+                  <div class="flex flex-row justify-between items-center">
+                    <p
+                      class="font-bold text-sm py-1 px-3 bg-green-200 rounded-full"
+                    >
+                      Mango Tree
+                    </p>
+                    <p class="font-bold text-xl p-2">৳500</p>
+                  </div>
+                  <button
+                    class="text-sm bg-green-700 px-4 py-2 rounded-full text-green-50 font-bold hover:bg-yeo-700 rounded-full p-2 w-full"
+                    href="#"
                   >
-                    Mango Tree
-                  </p>
-                  <p class="font-bold text-xl p-2">৳500</p>
+                    Add to Cart
+                  </button>
                 </div>
-                <button
-                  class="text-sm bg-green-700 px-4 py-2 rounded-full text-green-50 font-bold hover:bg-yeo-700 rounded-full p-2 w-full"
-                  href="#"
-                >
-                  Add to Cart
-                </button>
               </div>
-            </div>
-            <div
-              class="bg-stone-50 shadow-lg rounded-lg flex flex-col justify-between items-center"
-            >
-              <img
-                class="w-60 h-30"
-                src="./assets/about.png"
-                alt="Hero Image"
-                class="w-full h-96 object-cover"
-              />
-              <div class="py-4 px-2">
-                <p class="font-bold py-2">Mango Tree</p>
-                <p class="text-sm text-justify">
-                  A fast-growing tropical tree that produces delicious, juicy
-                  mangoes during summer. Its dense green
-                </p>
-                <div class="flex flex-row justify-between items-center">
-                  <p
-                    class="font-bold text-sm py-1 px-3 bg-green-200 rounded-full"
-                  >
-                    Mango Tree
-                  </p>
-                  <p class="font-bold text-xl p-2">৳500</p>
-                </div>
-                <button
-                  class="text-sm bg-green-700 px-4 py-2 rounded-full text-green-50 font-bold hover:bg-yeo-700 rounded-full p-2 w-full"
-                  href="#"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-            <div
-              class="bg-stone-50 shadow-lg rounded-lg flex flex-col justify-between items-center"
-            >
-              <img
-                class="w-60 h-30"
-                src="./assets/about.png"
-                alt="Hero Image"
-                class="w-full h-96 object-cover"
-              />
-              <div class="py-4 px-2">
-                <p class="font-bold py-2">Mango Tree</p>
-                <p class="text-sm text-justify">
-                  A fast-growing tropical tree that produces delicious, juicy
-                  mangoes during summer. Its dense green
-                </p>
-                <div class="flex flex-row justify-between items-center">
-                  <p
-                    class="font-bold text-sm py-1 px-3 bg-green-200 rounded-full"
-                  >
-                    Mango Tree
-                  </p>
-                  <p class="font-bold text-xl p-2">৳500</p>
-                </div>
-                <button
-                  class="text-sm bg-green-700 px-4 py-2 rounded-full text-green-50 font-bold hover:bg-yeo-700 rounded-full p-2 w-full"
-                  href="#"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-            <div
-              class="bg-stone-50 shadow-lg rounded-lg flex flex-col justify-between items-center"
-            >
-              <img
-                class="w-60 h-30"
-                src="./assets/about.png"
-                alt="Hero Image"
-                class="w-full h-96 object-cover"
-              />
-              <div class="py-4 px-2">
-                <p class="font-bold py-2">Mango Tree</p>
-                <p class="text-sm text-justify">
-                  A fast-growing tropical tree that produces delicious, juicy
-                  mangoes during summer. Its dense green
-                </p>
-                <div class="flex flex-row justify-between items-center">
-                  <p
-                    class="font-bold text-sm py-1 px-3 bg-green-200 rounded-full"
-                  >
-                    Mango Tree
-                  </p>
-                  <p class="font-bold text-xl p-2">৳500</p>
-                </div>
-                <button
-                  class="text-sm bg-green-700 px-4 py-2 rounded-full text-green-50 font-bold hover:bg-yeo-700 rounded-full p-2 w-full"
-                  href="#"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-            <div
-              class="bg-stone-50 shadow-lg rounded-lg flex flex-col justify-between items-center"
-            >
-              <img
-                class="w-60 h-30"
-                src="./assets/about.png"
-                alt="Hero Image"
-                class="w-full h-96 object-cover"
-              />
-              <div class="py-4 px-2">
-                <p class="font-bold py-2">Mango Tree</p>
-                <p class="text-sm text-justify">
-                  A fast-growing tropical tree that produces delicious, juicy
-                  mangoes during summer. Its dense green
-                </p>
-                <div class="flex flex-row justify-between items-center">
-                  <p
-                    class="font-bold text-sm py-1 px-3 bg-green-200 rounded-full"
-                  >
-                    Mango Tree
-                  </p>
-                  <p class="font-bold text-xl p-2">৳500</p>
-                </div>
-                <button
-                  class="text-sm bg-green-700 px-4 py-2 rounded-full text-green-50 font-bold hover:bg-yeo-700 rounded-full p-2 w-full"
-                  href="#"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </section>
-          <!-- parches cart -->
-          <section class="text-start bg-slate-50 rounded-lg p-2 w-2/12">
+            </section>
+            <!-- parches cart -->
+          <section class="text-start bg-slate-50 rounded-lg p-2 w-2/12 max-md:w-full">
             <p class="font-bold text-xl">Your Cart</p>
             <div
               class="bg-green-100 flex flex-row justify-between items-center p-2"
@@ -319,12 +167,19 @@
           </section>
         </div>
       </div>
-      <!-- Campaign section -->
-      <div class="w-8/12 mx-auto p-10">
-        <p class="text-center text-2xl p-5 font-bold">About the Campaign</p>
+          </div>
+        </div>
+      </div>
 
+      <!-- Campaign section -->
+      <p class="text-center text-2xl p-5 font-bold">About the Campaign</p>
+      <div class="w-8/12 mx-auto p-10">
         <div class="flex flex-row justify-center items-center max-lg:flex-col">
-          <img class="w-2/4" src="./assets/about.png" alt="plant" />
+          <img
+            class="w-2/4 max-lg:w-auto h-auto"
+            src="./assets/about.png"
+            alt="plant"
+          />
           <div class="p-4 max-w-2xl">
             <p>
               Green Earth is a global tree plantation initiative dedicated to
