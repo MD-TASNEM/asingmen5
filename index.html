@@ -19,7 +19,7 @@
     />
     <link rel="icon" type="image/png" href="./assets/logo.png" />
   </head>
-  <body class="bg-green-50">
+  <body class="bg-gray-200">
     <header>
       <nav
         class="bg-green-700 bg-gradient-to-r from-green-600 to-green-800 shadow-md p-4 flex flex-wrap justify-between items-center"
@@ -162,8 +162,7 @@
             <section
               class="grid grid-cols-3 gap-4 px-2 w-8/12 max-md:grid-cols-1 max-md:w-full"
             >
-              <section>
-                <div
+                            <div
                   class="bg-stone-50 shadow-lg rounded-lg flex flex-col justify-between items-center transition-shadow duration-300 hover:shadow-2xl hover:scale-105"
                 >
                   <img
@@ -191,28 +190,43 @@
                     </button>
                   </div>
                 </div>
-              </section>
+
             </section>
             <!-- parches cart -->
             <section
-              class="text-start bg-slate-50 rounded-lg p-2 w-2/12 max-md:w-full"
+              class="text-start bg-gray-100 rounded-lg p-2 w-2/12 max-md:w-full"
             >
               <p class="font-bold text-xl">Your Cart</p>
-              <div
-                class="bg-green-100 flex flex-row justify-between items-center p-2"
-              >
-                <div class="flex flex-col p-2">
-                  <p class="font-bold">Mango Tree</p>
-                  <p class="font-bold">৳500</p>
+              <div class="flex flex-col gap-2">
+                <div
+                  class="bg-green-100 flex flex-row justify-between items-center p-2"
+                >
+                  <div class="flex flex-col p-2">
+                    <p class="font-bold">Mango Tree</p>
+                    <p class="text-gray-500">
+                      ৳500 <samp>x</samp> <samp>1</samp>
+                    </p>
+                  </div>
+                  <i class="fa-solid fa-xmark"></i>
                 </div>
-                <i class="fa-solid fa-xmark"></i>
+                <div
+                  class="bg-green-100 flex flex-row justify-between items-center p-2"
+                >
+                  <div class="flex flex-col p-2">
+                    <p class="font-bold">Mango Tree</p>
+                    <p class="text-gray-500">
+                      ৳500 <samp>x</samp> <samp>1</samp>
+                    </p>
+                  </div>
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
               </div>
 
               <!-- total -->
 
               <div class="flex flex-row justify-between items-center p-2">
                 <p class="font-bold">Total:</p>
-                <p class="font-bold">৳500</p>
+                <p class="font-bold">৳1000</p>
               </div>
             </section>
           </div>
