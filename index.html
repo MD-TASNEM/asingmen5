@@ -9,7 +9,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -20,6 +20,7 @@
     <link rel="icon" type="image/png" href="./assets/logo.png" />
   </head>
   <body class="bg-gray-200">
+    <!-- Navbar -->
     <header>
       <nav
         class="bg-green-700 bg-gradient-to-r from-green-600 to-green-800 shadow-md p-4 flex flex-wrap justify-between items-center"
@@ -33,26 +34,20 @@
           Green Earth
         </a>
 
-        <!-- Menu Items -->
+        <!-- Menu (Desktop) -->
         <div class="hidden md:flex gap-4 items-center">
-          <a
-            href="#"
-            class="font-semibold text-white hover:text-yellow-400 transition-colors duration-300"
+          <a href="#" class="font-semibold text-white hover:text-yellow-400"
             >Home</a
           >
-          <a
-            href="#"
-            class="font-semibold text-white hover:text-yellow-400 transition-colors duration-300"
+          <a href="#" class="font-semibold text-white hover:text-yellow-400"
             >About</a
           >
-          <a
-            href="#"
-            class="font-semibold text-white hover:text-yellow-400 transition-colors duration-300"
+          <a href="#" class="font-semibold text-white hover:text-yellow-400"
             >Contact</a
           >
         </div>
 
-        <!-- Plant a Tree Button -->
+        <!-- Plant a Tree Button (Desktop) -->
         <div class="hidden md:block">
           <button
             class="bg-yellow-400 text-green-900 font-bold px-4 py-2 rounded-full shadow-md hover:bg-green-400 hover:text-white transition-all duration-300"
@@ -61,7 +56,7 @@
           </button>
         </div>
 
-        <!-- Mobile Hamburger Menu -->
+        <!-- Mobile Menu Button -->
         <div class="md:hidden flex items-center">
           <button id="mobile-menu-btn" class="text-white focus:outline-none">
             <i class="fa-solid fa-bars fa-lg"></i>
@@ -74,137 +69,86 @@
         id="mobile-menu"
         class="hidden bg-green-700 flex flex-col gap-2 p-4 md:hidden"
       >
-        <a
-          href="#"
-          class="font-semibold text-white hover:text-yellow-400 transition-colors duration-300"
+        <a href="#" class="font-semibold text-white hover:text-yellow-400"
           >Home</a
         >
-        <a
-          href="#"
-          class="font-semibold text-white hover:text-yellow-400 transition-colors duration-300"
+        <a href="#" class="font-semibold text-white hover:text-yellow-400"
           >About</a
         >
-        <a
-          href="#"
-          class="font-semibold text-white hover:text-yellow-400 transition-colors duration-300"
+        <a href="#" class="font-semibold text-white hover:text-yellow-400"
           >Contact</a
         >
-        <button
-          class="bg-yellow-400 text-green-900 font-bold px-4 py-2 rounded-full shadow-md hover:bg-green-400 hover:text-white transition-all duration-300 mt-2"
-        >
-          Plant a Tree
-        </button>
       </div>
     </header>
 
-    <script>
-      const btn = document.getElementById("mobile-menu-btn");
-      const menu = document.getElementById("mobile-menu");
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
-
     <main class="bg-gray-200">
-      <div class="p-2 mx-auto">
-        <!-- hero section -->
-        <div
-          class="bg-green-100 flex flex-row justify-center items-center gap-4 max-md:flex-col"
-        >
-          <img
-            class="w-3/12 h-80 max-md:h-auto"
-            src="./assets/hero-leaf1.png"
-            alt="hero-leaf1"
-          />
-          <div class="text-center">
-            <p class="font-bold text-3xl p-4">Plant a Tree, Grow a Future</p>
-            <p class="text-xl p-4">
-              Join our mission to plant 1 million trees and make the Earth
-              greener for future generations.
-            </p>
-            <button
-              class="bg-yellow-400 px-4 py-2 rounded-full text-green-950 font-bold hover:bg-green-400 transition-all duration-300"
-            >
-              Get Involved
-            </button>
-          </div>
-          <img
-            class="w-3/12 h-80 max-md:h-auto"
-            src="./assets/hero-leaf2.png"
-            alt="hero-leaf1"
-          />
+      <!-- Hero Section -->
+      <section
+        class="bg-green-100 flex justify-center items-center gap-4 max-md:flex-col p-4"
+      >
+        <img
+          src="./assets/hero-leaf1.png"
+          alt="hero-leaf1"
+          class="w-3/12 h-80 max-md:h-auto"
+        />
+        <div class="text-center">
+          <h1 class="text-3xl font-bold p-4">Plant a Tree, Grow a Future</h1>
+          <p class="text-xl p-4">
+            Join our mission to plant 1 million trees and make the Earth greener
+            for future generations.
+          </p>
+          <button
+            class="bg-yellow-400 px-4 py-2 rounded-full text-green-950 font-bold hover:bg-green-400 transition-all duration-300"
+          >
+            Get Involved
+          </button>
         </div>
-        <p class="text-center text-2xl p-5 font-bold">Choose Your Trees</p>
+        <img
+          src="./assets/hero-leaf2.png"
+          alt="hero-leaf2"
+          class="w-3/12 h-80 max-md:h-auto"
+        />
+      </section>
 
-        <div class="flex flex-row">
-          <div class="flex flex-row gap-4 w-full mx-auto p-1 max-lg:flex-col">
-            <!-- Categorie section -->
-            <div class="flex flex-col lg:flex-row gap-4 p-4">
-              <!-- Categories Sidebar -->
-              <section class="w-2/12 max-lg:w-full bg-slate-50 rounded-lg p-4">
-                <p class="font-bold text-xl py-2">Categories</p>
-                <ul
-                  id="categoryContainer"
-                  class="list-none flex flex-col gap-1"
-                >
-                  <!-- Default All Trees -->
-                  <li
-                    id="firstLi"
-                    class="text-xl p-2 rounded-sm bg-green-700 cursor-pointer"
-                  >
-                    All Trees
-                  </li>
-                </ul>
-              </section>
+      <!-- Trees Section -->
+      <section class="p-5">
+        <h2 class="text-2xl font-bold text-center mb-5">Choose Your Trees</h2>
 
-              <!-- Cards Grid -->
-              <section
-                id="cardsContainer"
-                class="w-8/12 max-lg:w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+        <div class="flex flex-row max-lg:flex-col gap-4">
+          <!-- Categories Sidebar -->
+          <aside class="w-2/12 max-lg:w-full bg-slate-50 rounded-lg p-4">
+            <h3 class="font-bold text-xl mb-2">Categories</h3>
+            <ul id="categoryContainer" class="flex flex-col gap-2 list-none">
+              <li
+                data-category="All Trees"
+                class="text-lg p-2 rounded-sm bg-green-700 text-white cursor-pointer"
               >
-                <!-- Cards will be inserted dynamically -->
-              </section>
-              <!-- parches cart -->
-              <section
-                class="text-start bg-gray-100 rounded-lg p-2 w-2/12 max-md:w-full"
-              >
-                <p class="font-bold text-xl">Your Cart</p>
-                <div class="flex flex-col gap-2">
-                  <div
-                    class="bg-green-100 flex flex-row justify-between items-center p-2"
-                  >
-                    <div class="flex flex-col p-2">
-                      <p class="font-bold">Mango Tree</p>
-                      <p class="text-gray-500">
-                        ৳500 <samp>x</samp> <samp>1</samp>
-                      </p>
-                    </div>
-                    <i class="fa-solid fa-xmark"></i>
-                  </div>
-                  <div
-                    class="bg-green-100 flex flex-row justify-between items-center p-2"
-                  >
-                    <div class="flex flex-col p-2">
-                      <p class="font-bold">Mango Tree</p>
-                      <p class="text-gray-500">
-                        ৳500 <samp>x</samp> <samp>1</samp>
-                      </p>
-                    </div>
-                    <i class="fa-solid fa-xmark"></i>
-                  </div>
-                </div>
+                All Trees
+              </li>
+            </ul>
+          </aside>
 
-                <!-- total -->
+          <!-- Cards Grid -->
+          <div
+            id="cardsContainer"
+            class="w-8/12 max-lg:w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+          ></div>
 
-                <div class="flex flex-row justify-between items-center p-2">
-                  <p class="font-bold">Total:</p>
-                  <p class="font-bold">৳1000</p>
-                </div>
-              </section>
+          <!-- Cart Sidebar -->
+          <aside
+            id="cartContainer"
+            class="w-2/12 max-md:w-full bg-gray-100 rounded-lg p-4"
+          >
+            <h3 class="font-bold text-xl mb-2">Your Cart</h3>
+            <div id="cartItems" class="flex flex-col gap-2"></div>
+            <div class="flex justify-between items-center mt-2 border-t pt-2">
+              <span class="font-bold">Total:</span>
+              <span id="cartTotal" class="font-bold">৳0</span>
             </div>
-          </div>
+          </aside>
         </div>
-      </div>
+      </section>
+
       <!-- Campaign section -->
       <p class="text-center text-2xl p-5 font-bold">About the Campaign</p>
       <div class="w-8/12 mx-auto p-10">
@@ -232,9 +176,9 @@
 
       <!-- Impact Section -->
       <div class="bg-green-200 p-15">
-        <p class="text-center text-2xl p-5 font-bold">Our Impact</p>
+        <p class="text-center text-4xl p-5 font-bold">Our Impact</p>
         <section
-          class="grid grid-cols-1 sm:grid-cols-3 gap-4 px-20 w-full mx-auto max-md:grid-cols-1 max-md:w-full"
+          class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-20 w-full mx-auto max-md:grid-cols-1 max-md:w-full"
         >
           <div
             class="px-10 py-5 bg-green-50 flex flex-col justify-center items-center gap-4 shadow-2xl transition-transform duration-300 hover:scale-105 hover:bg-green-300"
