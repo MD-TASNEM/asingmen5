@@ -17,12 +17,12 @@ mobileMenuBtn.addEventListener("click", () => {
 // Show Loading Spinner
 const showLoading = () => {
   cardsContainer.innerHTML = `
-      <div class="w-full h-full flex justify-center items-center py-10">
+      <div class="w-full h-full flex justify-center items-center p-10">
         <span class="loading loading-dots loading-xs"></span>
-<span class="loading loading-dots loading-sm"></span>
-<span class="loading loading-dots loading-md"></span>
-<span class="loading loading-dots loading-lg"></span>
-<span class="loading loading-dots loading-xl"></span>
+        <span class="loading loading-dots loading-sm"></span>
+        <span class="loading loading-dots loading-md"></span>
+        <span class="loading loading-dots loading-lg"></span>
+        <span class="loading loading-dots loading-xl"></span>
       </div>
     `;
 };
